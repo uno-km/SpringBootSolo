@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.uPlatform.controller.DTO.UserVO;
 import com.uPlatform.controller.mappers.userActiveMapper;
-import com.uPlatform.unoCode.VALIDATIONTOOL;
+import com.uPlatform.unoCode.Validation;
 
 @Service
 public class LoginBO
@@ -16,7 +16,7 @@ public class LoginBO
 	public boolean registerUser(UserVO userVO)
 	{
 		UserVO tempVO = userActiveMapper.getUserInfo(userVO);
-		if(VALIDATIONTOOL.ValidateObjectCheck(tempVO))
+		if(Validation.isNullCheck(tempVO))
 		{
 			userActiveMapper.signUp(userVO);
 			return true;

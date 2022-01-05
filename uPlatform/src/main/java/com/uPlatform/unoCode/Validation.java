@@ -1,17 +1,17 @@
 package com.uPlatform.unoCode;
 
-public class VALIDATIONTOOL
+public class Validation
 {
-	public static boolean ValidateObjectCheck(Object o)
+	public static boolean isNullCheck(Object o)
 	{
 		if(null == o)
 		{
-			return false;
+			return true;
 		}
-		return true;
+		return false;
 	}
 
-	public static boolean ValidateIDCheck(String str)
+	public static boolean isSymbolContainCheck(String str)
 	{
 		if(null == str)
 		{
