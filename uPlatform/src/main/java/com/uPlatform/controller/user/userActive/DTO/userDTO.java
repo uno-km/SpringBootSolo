@@ -1,4 +1,4 @@
-package com.uPlatform.controller.user.DTO;
+package com.uPlatform.controller.user.userActive.DTO;
 
 import lombok.Data;
 
