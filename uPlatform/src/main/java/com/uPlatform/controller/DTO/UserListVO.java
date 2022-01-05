@@ -8,6 +8,7 @@ import lombok.Data;
 
 @Data
 @Service
-public class UserListVO {
+public class UserListVO
+{
 	List<UserVO> UserListDTO;
 }
