@@ -1,4 +1,4 @@
-package com.uPlatform.controller.user.userActive.DTO;
+package com.uPlatform.controller.DTO;
 
 import java.util.List;
 

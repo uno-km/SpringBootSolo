@@ -2,7 +2,7 @@ package com.uPlatform.controller.mappers;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.uPlatform.controller.user.userActive.DTO.UserVO;
+import com.uPlatform.controller.DTO.UserVO;
 
 @Mapper
 public interface userActiveMapper {

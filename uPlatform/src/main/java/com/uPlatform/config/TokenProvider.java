@@ -6,7 +6,7 @@ import java.util.Date;
 
 import org.springframework.stereotype.Service;
 
-import com.uPlatform.controller.user.userActive.DTO.UserVO;
+import com.uPlatform.controller.DTO.UserVO;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
