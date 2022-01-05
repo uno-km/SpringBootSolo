@@ -3,7 +3,8 @@ package com.uPlatform.controller.DTO;
 import lombok.Data;
 
 @Data
-public class UserVO {
+public class UserVO
+{
 	private String user_id;
 	private String user_password;
 	private String user_email;

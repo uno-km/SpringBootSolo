@@ -12,13 +12,17 @@ import com.uPlatform.controller.user.userActive.DAO.LoginDAO;
 
 @RestController
 @RequestMapping(value = "user")
-public class LoginSO {
+public class LoginSO
+{
 	@Autowired
 	LoginDAO loginDAO;
 
 	@GetMapping(value = "/signup")
-	public ResponseEntity<?> registerUser(@RequestBody UserVO userVO) throws Exception {
-		if (loginDAO.registerUser(userVO)) {
+	public ResponseEntity<?> registerUser(@RequestBody UserVO userVO)
+			throws Exception
+	{
+		if(loginDAO.registerUser(userVO))
+		{
 			return ResponseEntity.ok().body(userVO);
 		}
 		return ResponseEntity.badRequest().body(userVO);

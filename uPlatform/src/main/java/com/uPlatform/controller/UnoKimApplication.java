@@ -12,18 +12,23 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @SpringBootApplication(exclude = SecurityAutoConfiguration.class)
-public class UnoKimApplication {
+public class UnoKimApplication
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(UnoKimApplication.class, args);
 	}
 
 	@Bean
-	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
+	public SqlSessionFactory sqlSessionFactory(DataSource dataSource)
+			throws Exception
+	{
 		SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource);
 
-		Resource[] res = new PathMatchingResourcePatternResolver().getResources("classpath:mappers/*Mapper.xml");
+		Resource[] res = new PathMatchingResourcePatternResolver()
+				.getResources("classpath:mappers/*Mapper.xml");
 		sessionFactory.setMapperLocations(res);
 		sessionFactory.setTypeAliasesPackage("com.uPlatform.controller.DTO"); // 여기 추가
 
