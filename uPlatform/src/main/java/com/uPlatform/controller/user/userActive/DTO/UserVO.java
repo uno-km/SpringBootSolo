@@ -1,9 +1,12 @@
 package com.uPlatform.controller.user.userActive.DTO;
 
+import org.springframework.stereotype.Service;
+
 import lombok.Data;
 
+@Service
 @Data
-public class userDTO {
+public class UserVO {
 	String user_id;
 	String user_password;
 	String user_email;
