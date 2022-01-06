@@ -23,6 +23,15 @@ public class LoginDAO
 		}
 		return loginBO.registerUser(userVO);
 	}
+	
+	public boolean signinUser(UserVO userVO)
+	{
+		if(userVO.getUser_id().isEmpty())
+		{
+			return false;
+		}
+		return loginBO.signinUser(userVO);
+	}
 	public boolean checkDuplId(UserVO userVO)
 	{
 		return loginBO.checkDuplId(userVO);
