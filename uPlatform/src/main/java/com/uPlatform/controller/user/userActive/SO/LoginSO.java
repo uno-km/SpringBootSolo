@@ -29,8 +29,8 @@ public class LoginSO
 		return ResponseEntity.badRequest().body(userVO);
 	}
 	@PostMapping(value = "/checkId")
-	public boolean checkDuplId(@RequestBody String inputId)
+	public boolean checkDuplId(@RequestBody UserVO userVO)
 	{
-		return loginDAO.checkDuplId(inputId);
+		return loginDAO.checkDuplId(userVO);
 	}
 }

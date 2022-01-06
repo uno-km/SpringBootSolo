@@ -11,5 +11,5 @@ public interface userActiveMapper
 
 	public void signUp(UserVO userVO);
 
-	public int checkDuplicationId(String id);
+	public int checkDuplicationId(UserVO userVO);
 }

@@ -23,13 +23,13 @@ public class LoginBO
 		}
 		return false;
 	}
-	public boolean checkDuplId(String input)
+	public boolean checkDuplId(UserVO userVO)
 	{
-		int res = userActiveMapper.checkDuplicationId(input);
-		if(res > 0)
+		UserVO tempVO = userActiveMapper.getUserInfo(userVO);
+		if(Validation.isNullCheck(tempVO))
 		{
-			return false;
+			return true;
 		}
-		return true;
+		return false;
 	}
 }

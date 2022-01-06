@@ -23,8 +23,8 @@ public class LoginDAO
 		}
 		return loginBO.registerUser(userVO);
 	}
-	public boolean checkDuplId(String input)
+	public boolean checkDuplId(UserVO userVO)
 	{
-		return loginBO.checkDuplId(input);
+		return loginBO.checkDuplId(userVO);
 	}
 }
