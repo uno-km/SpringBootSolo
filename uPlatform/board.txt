@@ -1,0 +1,9 @@
+{
+    "user_id" : "zz78",
+    "user_password" : "qwe",
+    "user_email" : "qwe@qwe.com",
+    "user_name" : "김은호",
+    "user_phoneNum" : "01049437334",
+    "user_auth" : "101",
+    "user_birth" : "941110"
+}

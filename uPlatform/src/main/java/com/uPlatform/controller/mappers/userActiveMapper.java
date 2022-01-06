@@ -10,4 +10,6 @@ public interface userActiveMapper
 	public UserVO getUserInfo(UserVO userVO);
 
 	public void signUp(UserVO userVO);
+
+	public int checkDuplicationId(String id);
 }

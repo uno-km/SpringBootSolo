@@ -5,6 +5,16 @@
 	namespace="com.uPlatform.controller.mappers.userActiveMapper">
 
 	<select
+		resultType="int" parameterType="String"
+		id="checkDuplicationId">
+		SELECT
+			COUNT(*)
+		FROM
+			USER_INFO
+		WHERE
+			USER_ID = #{value}
+	</select>
+	<select
 		resultType="com.uPlatform.controller.DTO.UserVO"
 		parameterType="UserVO"
 		id="getUserInfo">

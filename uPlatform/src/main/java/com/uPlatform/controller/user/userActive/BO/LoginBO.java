@@ -23,4 +23,13 @@ public class LoginBO
 		}
 		return false;
 	}
+	public boolean checkDuplId(String input)
+	{
+		int res = userActiveMapper.checkDuplicationId(input);
+		if(res > 0)
+		{
+			return false;
+		}
+		return true;
+	}
 }
