@@ -1,4 +1,4 @@
-package com.uPlatform.unoCode;
+package com.unoCode;
 
 public class Validation
 {

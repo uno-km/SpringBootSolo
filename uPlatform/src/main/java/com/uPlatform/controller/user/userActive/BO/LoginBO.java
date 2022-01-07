@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.uPlatform.controller.DTO.UserVO;
 import com.uPlatform.controller.mappers.userActiveMapper;
-import com.uPlatform.unoCode.Validation;
+import com.unoCode.Validation;
 
 @Service
 public class LoginBO

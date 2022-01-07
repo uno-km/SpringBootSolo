@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.uPlatform.controller.DTO.UserVO;
 import com.uPlatform.controller.user.userActive.BO.LoginBO;
-import com.uPlatform.unoCode.Validation;
+import com.unoCode.Validation;
 
 @Service
 public class LoginDAO
@@ -23,7 +23,7 @@ public class LoginDAO
 		}
 		return loginBO.registerUser(userVO);
 	}
-	
+
 	public boolean signinUser(UserVO userVO)
 	{
 		if(userVO.getUser_id().isEmpty())
